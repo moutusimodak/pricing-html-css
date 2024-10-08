@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <title>Pricing Drill</title>
+  </head>
+
+  <body>
+    <!-- background image -->
+
+    <div class="background">
+      <div class="main-container">
+        <div class="head-container">
+          <h2>Our Pricing</h2>
+
+          <!-- toggle button -->
+
+          <div class="toggle-class">
+            <label>Annually</label>
+            <input type="checkbox" id="toggle" />
+            <label for="toggle" class="switch"></label>
+            <label>Monthly</label>
+          </div>
+        </div>
+
+        <!-- Card container details -->
+        <div class="card-container">
+          <div class="card basic">
+            <h4 class="basic-h4">Basic</h4>
+            <h1 id="basic-price">&dollar;199.99</h1>
+            <div class="features">
+              <hr />
+              <p class="basic-card-p">500 GB Storage</p>
+              <hr />
+              <p class="basic-card-p">2 Users Allowed</p>
+              <hr />
+              <p class="basic-card-p">Send up to 3 GB</p>
+              <hr />
+            </div>
+            <button class="btn-basic">LEARN MORE</button>
+          </div>
+
+          <div class="card professional">
+            <h4>Professional</h4>
+            <h1 id="professional-price">&dollar;249.99</h1>
+            <div class="features">
+              <hr />
+              <p>1 TB Storage</p>
+              <hr />
+              <p>5 Users Allowed</p>
+              <hr />
+              <p>Send up to 10 GB</p>
+              <hr />
+            </div>
+            <button class="btn-professional">LEARN MORE</button>
+          </div>
+
+          <div class="card master">
+            <h4 class="master-h4">Master</h4>
+            <h1 id="master-price">&dollar;399.99</h1>
+            <div class="features">
+              <hr />
+              <p class="basic-card-p">2 TB Storage</p>
+              <hr />
+              <p class="basic-card-p">10 Users Allowed</p>
+              <hr />
+              <p class="basic-card-p">Send up to 20 GB</p>
+              <hr />
+            </div>
+            <button class="btn-master">LEARN MORE</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
