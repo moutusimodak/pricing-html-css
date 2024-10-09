@@ -25,6 +25,9 @@ body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+
+ 
+ 
 }
 
 /* Header Section */
@@ -43,72 +46,69 @@ h2 {
 
 /* main container section */
 .main-container {
+
+
   box-shadow: 0px 0px 10px 3px lightgray;
-  background-color: rgba(247, 247, 255, 255);
-  margin-top: 80px;
-  margin-left: 90px;
-  margin-right: 90px;
-  height: 800px;
+  background-color: rgba(247,247,255,255);
+  margin-top: 70px; 
+  margin-left: auto; 
+  margin-right: auto; 
+  height: 830px; 
+  width: 80%; 
   background-image: url("images/bg-top.svg"), url("images/bg-bottom.svg");
   background-size: 30% 50%;
   background-position: top right, bottom left;
   background-repeat: no-repeat;
   position: relative;
-  padding-top: 30px;
+  padding-top: 20px;
+  
 }
 
 /* toggle button  */
-
-.toggle-class {
-  margin-top: 50px;
+.toggle-checkbox {
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
 }
-
-.switch {
+.toggle {
   position: relative;
-  display: inline-block;
-  width: 54px;
-  height: 26px;
+  margin: 1rem;
+  width: 4rem;
+  height: 2rem;
   background-color: rgba(129, 134, 230, 255);
-  border-radius: 13px;
+  border-radius: 2rem;
 }
-
-.switch::after {
+.toggle::after {
   content: "";
   position: absolute;
-  top: 1.8px;
-  left: 3px;
-  width: 22px;
-  height: 22px;
+  top: 0.1rem;
+  left: 0.1rem;
+  width: 1.8rem;
+  height: 1.8rem;
   border-radius: 50%;
-  background-color: white;
-  transition: all 0.3s linear;
+  background-color: #ffff;
+  transition: 0.4s;
 }
 
-input[type="checkbox"]:checked + .switch::after {
-  translate: 1.7rem 0;
+input[type="checkbox"]:checked + .toggle {
+  background-color: hsl(237, 63%, 64%); 
 }
+input[type="checkbox"]:checked + .toggle::after {
+  translate: 2rem 0;
 
-input[type="checkbox"]:checked + .switch {
-  background-color: hsl(236, 72%, 79%);
+ 
 }
-input[type="checkbox"] {
+#check {
   display: none;
 }
 
-label {
-  padding-left: 15px;
-  padding-right: 15px;
-  font-size: 19px;
-}
 
 /* Pricing Cards Section */
 .card-container {
   display: flex;
   justify-content: center;
-  gap: 22px;
+  align-items: center;
+  gap: 12px;
   margin-top: 100px;
 }
 
@@ -119,16 +119,19 @@ label {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   text-align: left;
   width: 280px;
+  height: 450px;
   position: relative;
   transition: transform 0.3s ease;
+ 
 }
 
 .professional {
-  transform: scale(1.1);
-  background-color: rgba(144, 149, 234, 255);
-  width: 310px;
-  height: 450px;
+
+  background-color: rgba(144,149,234,255);
+  width: 320px;
+  height: 480px;
   color: white;
+
 }
 
 .card:hover {
@@ -154,21 +157,21 @@ h1 {
   margin: 10px 0;
   text-align: center;
   font-size: 15px;
+  
 }
 
 .features hr {
   border: none;
   height: 1px;
   background-color: #ddd;
-  margin: 10px;
+  margin: 10px ;
 }
 
-.basic-card-p {
-  color: rgba(177, 178, 191, 255);
+.basic-card-p{
+  color: rgba(177,178,191,255);
 }
-.basic-h4,
-.master-h4 {
-  color: rgba(151, 152, 166, 255);
+.basic-h4, .master-h4{
+  color: rgba(151,152,166,255);
 }
 
 /* Buttons */
@@ -184,7 +187,7 @@ button {
 }
 
 .btn-basic {
-  background-color: rgba(157, 160, 239, 255);
+  background-color: rgba(157,160,239,255);
   color: white;
   margin-top: 28px;
 }
@@ -205,7 +208,7 @@ button {
 }
 
 .btn-master {
-  background-color: rgba(157, 160, 239, 255);
+  background-color: rgba(157,160,239,255);
   color: white;
   margin-top: 28px;
 }
@@ -214,9 +217,32 @@ button {
   background-color: #574fcf;
 }
 
+/* bottom left circle  */
+
+.circle-container {
+  position: absolute;
+  bottom: 0px; 
+  left: 35px;   
+  display: flex;
+  flex-wrap: wrap; 
+  width: 150px; 
+}
+
+.circle {
+  width: 20px;
+  height: 20px;
+  background-color: skyblue; 
+  border-radius: 50%; 
+  margin: 5px; 
+}
+
+
+
+
 /* For responsive design */
 
 @media (max-width: 1440px) {
+
   .main-container {
     margin-left: 28px;
     margin-right: 28px;
@@ -225,13 +251,25 @@ button {
   }
 
   .card-container {
+    margin-top: 50px;
     flex-direction: column;
     align-items: center;
   }
+  .professional{
+    width: 90%;
+    height: 450px;
+
+  }
+
 
   .card {
     width: 90%;
+    height: 450px;
     margin-bottom: 15px;
+  }
+
+  .card:hover {
+    transform: translateY(-10px);
   }
 
   h2 {
@@ -249,6 +287,6 @@ button {
   .features p {
     font-size: 15px;
   }
-  
-  
 }
+
+
